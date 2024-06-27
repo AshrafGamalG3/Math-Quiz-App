@@ -27,4 +27,4 @@ Math Quiz App is built using Kotlin and utilizes Android Jetpack components such
 
 ## Design Patterns
 
-- Consider applying design patterns like MVVM (Model-View-ViewModel) to separate concerns and make your codebase more maintainable and testable.
+- applying design patterns like MVVM (Model-View-ViewModel) to separate concerns and make your codebase more maintainable and testable.
