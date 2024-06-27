@@ -25,7 +25,7 @@ Math Quiz App is built using Kotlin and utilizes Android Jetpack components such
 - Countdown timer using CountDownTimer class for quiz time management.
 - Local storage of quiz data using Room Database for offline access.
 
-## Design Patterns
+## architecture pattern
 
 - applying design patterns like MVVM (Model-View-ViewModel) to separate concerns and make your codebase more maintainable and testable.
 
