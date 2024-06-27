@@ -28,3 +28,8 @@ Math Quiz App is built using Kotlin and utilizes Android Jetpack components such
 ## Design Patterns
 
 - applying design patterns like MVVM (Model-View-ViewModel) to separate concerns and make your codebase more maintainable and testable.
+
+## Video
+
+https://github.com/AshrafGamalG3/Math-Quiz-App/assets/159867026/54b3bbe4-c0ba-46ea-a9d8-76ebcf29ab13
+
