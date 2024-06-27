@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/quiz_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/math_quiz_design"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:contentDescription="@string/image"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/easy_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cornerRadius="10dp"
+        android:layout_marginHorizontal="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_image"
+        android:layout_marginTop="70dp"
+        android:text="@string/easy"
+        android:background="@drawable/button_bg"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/medium_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+
+        app:cornerRadius="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy_button"
+        android:text="@string/medium"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hard_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cornerRadius="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medium_button"
+        android:text="@string/hard"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/train_your_brain"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

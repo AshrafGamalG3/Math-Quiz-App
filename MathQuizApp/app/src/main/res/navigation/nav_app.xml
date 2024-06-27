@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mathquizapp.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mathquizapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.example.mathquizapp.ui.quiz.PlayFragment"
+        android:label="fragment_play"
+        tools:layout="@layout/fragment_play" >
+
+        <argument
+            android:name="questionType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_playFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.mathquizapp.ui.finish.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+        <argument
+            android:name="score"
+            app:argType="string" />
+        <!-- Change the argType for 'data' to an array of 'com.example.mathquizapp.question.Question' -->
+        <argument
+            android:name="data"
+            app:argType="com.example.mathquizapp.question.Question[]" />
+        <action
+            android:id="@+id/action_finishFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+
+</navigation>
